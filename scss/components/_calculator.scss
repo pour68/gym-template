@@ -1,0 +1,77 @@
+.calculate {
+    padding-bottom: 0;
+
+    &__container {
+        row-gap: 4rem;
+    }
+
+    &__contanet,
+    .section__titles {
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    &__description {
+        text-align: center;
+        margin-bottom: 2.5rem;
+    }
+
+    &__form {
+        display: grid;
+        row-gap: 1rem;
+
+        & .button {
+            margin-top: 1.5rem;
+        }
+    }
+
+    &__box {
+        position: relative;
+        border: 2px solid var(--first-color-light);
+    }
+
+    &__input {
+        width: 100%;
+        background: transparent;
+        padding: 20px 56px 20px 24px;
+        outline: none;
+        border: none;
+        color: var(--text-color);
+
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        &[type="number"] {
+            -moz-appearance: textfield;
+        }
+    }
+
+    &__label {
+        position: absolute;
+        right: 1.5rem;
+        top: 1.25rem;
+        color: var(--title-color);
+        font-weight: var(--fw-bold);
+    }
+
+    &__img {
+        width: 200px;
+        justify-self: center;
+    }
+
+    &__message {
+        position: absolute;
+        transform: translateY(1rem);
+    }
+}
+
+.color-green {
+    color: var(--first-color);
+}
+
+.color-red {
+    color: hsl(0, 80%, 64%);
+}

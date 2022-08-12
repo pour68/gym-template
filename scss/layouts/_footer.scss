@@ -1,0 +1,108 @@
+.footer {
+    &__container {
+        row-gap: 4rem;
+        padding-top: 1rem;
+    }
+
+    &__logo,
+    &__description {
+        color: var(--title-color);
+    }
+
+    &__logo,
+    &__form,
+    &__social {
+        display: flex;
+    }
+
+    &__logo {
+        align-items: center;
+        column-gap: 0.5rem;
+        font-weight: var(--fw-bold);
+        margin-bottom: 1.5rem;
+
+        & img {
+            width: 1.5rem
+        }
+    }
+
+    &__description {
+        margin-bottom: 2rem;
+    }
+
+    &__form {
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+
+    &__input {
+        padding: 20px 56px 20px 24px;
+        border: 2px solid var(--first-color-light);
+        background: transparent;
+        color: var(--text-color);
+        outline: none;
+    }
+
+    &__content,
+    &__links,
+    &__group {
+        display: grid;
+    }
+
+    &__content {
+        grid-template-columns: repeat(1, max-content);
+        gap: 2.5rem 3.5rem;
+    }
+
+    &__title {
+        font-size: var(--fs-lg);
+        margin-bottom: 1.5rem;
+    }
+
+    &__links {
+        row-gap: 0.75rem;
+    }
+
+    &__link {
+        color: var(--text-color);
+        transition: color 0.3s;
+
+        &:hover {
+            color: var(--first-color);
+        }
+    }
+
+    &__group {
+        margin-top: 5rem;
+        justify-items: center;
+        row-gap: 2rem;
+    }
+
+    &__social {
+        column-gap: 1.25rem;
+
+        &--link {
+            display: inline-flex;
+            padding: 0.35rem;
+            background-color: var(--first-color);
+            border-radius: 50%;
+            font-size: 1.25rem;
+            color: var(--title-color-black);
+            transition: background 0.4s;
+
+            &:hover {
+                color: var(--first-color-gray);
+            }
+        }
+    }
+
+    &__copy {
+        font-size: var(--fs-sm);
+        color: var(--text-color-right);
+    }
+
+    &__message {
+        position: absolute;
+        transform: translateY(1rem);
+    }
+}

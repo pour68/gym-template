@@ -1,0 +1,30 @@
+.button {
+    display: inline-block;
+    background-color: var(--first-color);
+    padding: 12px 32px;
+    border: 2px solid var(--first-color-light);
+    color: var(--title-color-black);
+    font-weight: var(--fw-bold);
+    cursor: pointer;
+    transition: background 0.3s;
+
+    &:hover {
+        background-color: var(--first-color-alt);
+    }
+
+    & i {
+        font-size: 1.25rem;
+        transition: transform 0.3s;
+    }
+
+    &__flex {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 0.5rem;
+
+        &:hover i {
+            transform: translateX(0.25rem);
+        }
+    }
+}

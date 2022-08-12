@@ -1,0 +1,46 @@
+:root {
+    --header-height: 3.5rem;
+
+    --first-color: hsl(79, 72%, 55%);
+    --first-color-light: hsl(79, 97%, 77%);
+    --first-color-alt: hsl(79, 67%, 52%);
+    --first-color-dark: hsl(79, 63%, 50%);
+    --first-color-gray: hsl(79, 6%, 64%);
+    --title-color: hsl(180, 4%, 98%);
+    --title-color-black: hsl(180, 4%, 12%);
+    --text-color: hsl(180, 4%, 72%);
+    --text-color-light: hsl(180, 4%, 65%);
+    --body-color: hsl(180, 12%, 8%);
+
+    --body-font: "Red Hat Display", sans-serif;
+    --second-font: "Kaushan Script", cursive;
+    --fs-biggest: 2rem;
+    --fs-bigger: 1.5rem;
+    --fs-big: 1.25rem;
+    --fs-xxl: 1.5rem;
+    --fs-xl: 1.25rem;
+    --fs-lg: 1rem;
+    --fs-md: 0.938rem;
+    --fs-sm: 0.813rem;
+    --fs-xs: 0.75rem;
+
+    --fw-bold: 700;
+    --fw-bolder: 900;
+
+    --zi-tooltip: 10;
+    --zi-fixed: 1000;
+}
+
+@media screen and (min-width: 1024px) {
+    :root {
+        --fs-biggest: 6rem;
+        --fs-bigger: 3.5rem;
+        --fs-big: 2.75rem;
+        --fs-xxl: 2.25rem;
+        --fs-xl: 1.5rem;
+        --fs-lg: 1.25rem;
+        --fs-md: 1rem;
+        --fs-sm: 0.875rem;
+        --fs-xs: 0.813rem;
+    }
+}
