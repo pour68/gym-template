@@ -124,6 +124,8 @@
 /* desktop */
 @media (min-width: 1023px) {
     .nav {
+        margin: 0 auto;
+        max-width: 1200px;
         height: calc(var(--header-height) + 2rem);
 
         &__menu {
@@ -257,7 +259,7 @@
 
 @media (min-width: 1150px) {
     .nav__list {
-        column-gap: 2rem;
+        column-gap: 1.75rem;
     }
 
     .container {
